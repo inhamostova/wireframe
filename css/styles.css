@@ -276,3 +276,51 @@ img {
   background-color: var(--accent-cl);
   color: var(--white-cl);
 }
+
+/* Socials icons */
+
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  /* outline: 1px solid tomato; */
+  background-color: rgb(245, 240, 240);
+  color: rgb(63, 139, 220);
+
+  transition: color 250ms linear;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: rgb(63, 139, 220);
+  color: rgb(245, 240, 240);
+}
+
+.socials-link .icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* train with 2 colors icons */
+.color-item {
+  --color1: red;
+  --color2: lightblue;
+}
+
+.color-item:hover,
+.color-item:focus {
+  --color1: black;
+  --color2: yellow;
+}
