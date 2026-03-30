@@ -5,12 +5,10 @@ const refs = {
   body: document.querySelector('body'),
 };
 
-console.log(refs);
+refs.btnModalOpen.addEventListener('click', toggleClass);
+refs.btnModalClose.addEventListener('click', toggleClass);
 
 function toggleClass() {
   refs.backdrop.classList.toggle('is-open');
   refs.body.classList.toggle('no-scroll');
 }
-
-refs.btnModalOpen.addEventListener('click', toggleClass);
-refs.btnModalClose.addEventListener('click', toggleClass);
