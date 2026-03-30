@@ -45,27 +45,49 @@
   <!-- Main -->
   <main>
     <!-- Hero -->
-     <ul>
+     <ul class="colors">
       <li class="color-item">
         <svg class="color-icon">
           <use href="./images/icons/icons2.svg#antenna"></use>
         </svg>
+        <ul class="submenu">
+          <li><a href="">Item-1</a></li>
+          <li><a href="">Item-2</a></li>
+          <li><a href="">Item-3</a></li>
+        </ul>
       </li>
       <li class="color-item">
         <svg class="color-icon">
           <use href="./images/icons/icons2.svg#clock"></use>
         </svg>
+                <ul class="submenu">
+          <li><a href="">Item-1</a></li>
+          <li><a href="">Item-2</a></li>
+          <li><a href="">Item-3</a></li>
+        </ul>
       </li>
       <li class="color-item">
         <svg class="color-icon">
           <use href="./images/icons/icons2.svg#astronaut"></use>
         </svg>
+                <ul class="submenu">
+          <li><a href="">Item-1</a></li>
+          <li><a href="">Item-2</a></li>
+          <li><a href="">Item-3</a></li>
+        </ul>
       </li>
      </ul>
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">The largest community of photo enthusiasts</h1>
-        <a class="hero-btn" href="">Join Today</a>
+        <button class="hero-btn btn" type="button" data-modal-open>Join Today</button>
+      </div>
+      <div class="backdrop" data-backdrop>
+        <div class="modal"><p
+          class="modal-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iste nemo earum quod vel tempora, maxime ut quam iusto minus porro. Dolores quaerat porro eaque natus itaque vel iusto rerum.</p>
+                  <button class="modal-close btn btn-primary" type="button" data-modal-close>Close</button>
+        </div>
+
       </div>
     </section>
 
@@ -229,6 +251,8 @@
       </div>
     </footer>
   </main>
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

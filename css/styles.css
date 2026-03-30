@@ -43,11 +43,54 @@ img {
 }
 
 .container {
-  width: 1560px;
+  width: 1260px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Modal */
+.no-scroll {
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(204, 204, 204, 0.5);
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 250ms ease-in;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+
+  background-color: #ffffff;
+
+  transform: translate(-50%, -50%);
+}
+
+.modal-text {
+  margin-bottom: 30px;
 }
 
 /* Header */
@@ -102,6 +145,7 @@ img {
   text-align: center;
 
   cursor: pointer;
+  transition: all 250ms ease-in;
 }
 
 .btn-primary {
@@ -314,13 +358,39 @@ img {
 }
 
 /* train with 2 colors icons */
+.colors {
+  display: flex;
+}
+
 .color-item {
   --color1: red;
   --color2: lightblue;
+
+  position: relative;
+
+  cursor: pointer;
 }
 
 .color-item:hover,
 .color-item:focus {
   --color1: black;
   --color2: yellow;
+}
+
+.color-item:hover .submenu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: initial;
+}
+
+.submenu {
+  position: absolute;
+  /* z-index: 22; */
+  top: 100%;
+  left: 0;
+  background-color: #ccc;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 250ms ease-in;
+  pointer-events: none;
 }
