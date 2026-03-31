@@ -123,3 +123,48 @@ img {
   transition: transform 300ms linear;
   text-align: center;
 }
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  perspective: 400px;
+
+  outline: 1px solid black;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 150px;
+  transform: translate(-50%, -50%) rotateY(45deg);
+
+  /* transform: translate(-50%, -50%) scale(0.3) rotateZ(-360deg);
+  opacity: 0;
+  transition:
+    transform 300ms ease-out,
+    opacity 300ms ease-out; */
+  /* animation: change-color 2000ms linear infinite; */
+  background-color: lightblue;
+}
+
+/* .container:hover .box {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1) rotateZ(0);
+} */
+
+/* @keyframes change-color {
+  0% {
+    background-color: brown;
+  }
+  50% {
+    background-color: greenyellow;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    background-color: deepskyblue;
+    transform: translate(-50%, -50%) rotate(0);
+  }
+} */

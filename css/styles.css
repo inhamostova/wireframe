@@ -86,7 +86,12 @@ img {
 
   background-color: #ffffff;
 
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.3);
+  transition: transform 300ms linear;
+}
+
+.backdrop.is-open .modal {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .modal-text {
