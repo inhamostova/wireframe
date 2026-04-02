@@ -81,10 +81,11 @@ img {
   top: 50%;
   left: 50%;
   width: 600px;
-  height: 400px;
+  /* height: 400px; */
   padding: 20px;
 
   background-color: #ffffff;
+  border-radius: 10px;
 
   transform: translate(-50%, -50%) scale(0.3);
   transition: transform 300ms linear;
@@ -96,6 +97,34 @@ img {
 
 .modal-text {
   margin-bottom: 30px;
+}
+
+.form {
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-field input {
+  padding: 5px 10px;
+}
+
+.form-gorup {
+  margin-bottom: 20px;
+}
+
+.group-title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
 }
 
 /* Header */

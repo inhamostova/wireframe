@@ -26,7 +26,7 @@
           photo</a>
         <ul class="nav-list">
           <li><a class="nav-link" href="./animaion.html">
-            Features</a></li>
+              Features</a></li>
           <li><a class="nav-link" href="">Pricing</a></li>
           <li><a class="nav-link" href="">Community</a></li>
           <li><a class="nav-link" href="">Support</a></li>
@@ -42,7 +42,7 @@
   <!-- Main -->
   <main>
     <!-- Hero -->
-     <ul class="colors">
+    <ul class="colors">
       <li class="color-item">
         <svg class="color-icon">
           <use href="./images/icons/icons2.svg#antenna"></use>
@@ -57,7 +57,7 @@
         <svg class="color-icon">
           <use href="./images/icons/icons2.svg#clock"></use>
         </svg>
-                <ul class="submenu">
+        <ul class="submenu">
           <li><a href="">Item-1</a></li>
           <li><a href="">Item-2</a></li>
           <li><a href="">Item-3</a></li>
@@ -67,22 +67,81 @@
         <svg class="color-icon">
           <use href="./images/icons/icons2.svg#astronaut"></use>
         </svg>
-                <ul class="submenu">
+        <ul class="submenu">
           <li><a href="">Item-1</a></li>
           <li><a href="">Item-2</a></li>
           <li><a href="">Item-3</a></li>
         </ul>
       </li>
-     </ul>
+    </ul>
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">The largest community of photo enthusiasts</h1>
         <button class="hero-btn btn" type="button" data-modal-open>Join Today</button>
       </div>
       <div class="backdrop" data-backdrop>
-        <div class="modal"><p
-          class="modal-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iste nemo earum quod vel tempora, maxime ut quam iusto minus porro. Dolores quaerat porro eaque natus itaque vel iusto rerum.</p>
-                  <button class="modal-close btn btn-primary" type="button" data-modal-close>Close</button>
+        <div class="modal">
+          <form class="js-form form">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="user-name">
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email">
+            </div>
+            <div class="form-field">
+              <label for="tel">Phone</label>
+              <input type="text" id="tel" name="phone">
+            </div>
+            <div role="group" class="form-gorup">
+              <p class="group-title">Topic of the story</p>
+              <input type="checkbox" name="topic" id="html" value="html">
+              <label for="html">HTML</label>
+
+              <input type="checkbox" name="topic" id="css" value="css">
+              <label for="css">CSS</label>
+
+              <input type="checkbox" name="topic" id="js" value="js">
+              <label for="js">JavaScript</label>
+            </div>
+            <div role="group" class="form-gorup">
+              <p class="group-title">Choose your experience level</p>
+              <input type="radio" name="experience" id="junior" value="junior">
+              <label for="junior">Junior</label>
+
+              <input type="radio" name="experience" id="middle" value="middle">
+              <label for="middle">Middle</label>
+
+              <input type="radio" name="experience" id="senior" value="senior">
+              <label for="senior">Senior</label>
+            </div>
+            <div class="form-field">
+              <label for="date">Date</label>
+              <input type="datetime-local" id="date" name="date">
+            </div>
+
+            <div class="form-field">
+              <label for="comment">Leave your comment</label>
+              <textarea name="comment" id="comment"></textarea>
+            </div>
+
+            <label for="months">Month</label>
+            <select name="months" id="months">
+              <optgroup label="winter">
+                              <option value="dec">December</option>
+              <option value="jan">January</option>
+              <option value="feb">February</option>
+              </optgroup>
+<optgroup label="spring">
+              <option value="mar">March</option>
+              <option value="apr">April</option>
+              <option value="may">May</option>
+              </optgroup>
+            </select>
+            <button type="submit">Submit</button>
+          </form>
+          <button class="modal-close btn btn-primary" type="button" data-modal-close>Close</button>
         </div>
 
       </div>
@@ -204,52 +263,53 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-      <ul>
-        <li><a href="">Mobile app</a></li>
-        <li><a href="">Community</a></li>
-        <li><a href="">Company</a></li>
-      </ul>
-      <a href="">photo</a>
-      <ul>
-        <li><a href="">Help desk</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Resources</a></li>
-      </ul>
-      <ul class="socials">
-        <li>
-          <a href="" class="socials-link">
-          <svg class="icon">
-            <use href="./images/icons/icons2.svg#instagram"></use>
-          </svg></a>
-        </li>
-        <li>
-          <a href="" class="socials-link">
-                      <svg class="icon">
-            <use href="./images/icons/icons2.svg#facebook"></use>
-          </svg>
-          </a>
-        </li>
-        <li>
-          <a href="" class="socials-link">
-                      <svg class="icon">
-            <use href="./images/icons/icons2.svg#linkedin"></use>
-          </svg>
-          </a>
-        </li>
-        <li>
-          <a href="" class="socials-link">
-                      <svg class="icon">
-            <use href="./images/icons/icons2.svg#twitter"></use>
-          </svg>
-          </a>
-        </li>
-      </ul>
-      <p>&#169;Photo, Inc. 2019. We love our users!</p>
+        <ul>
+          <li><a href="">Mobile app</a></li>
+          <li><a href="">Community</a></li>
+          <li><a href="">Company</a></li>
+        </ul>
+        <a href="">photo</a>
+        <ul>
+          <li><a href="">Help desk</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Resources</a></li>
+        </ul>
+        <ul class="socials">
+          <li>
+            <a href="" class="socials-link">
+              <svg class="icon">
+                <use href="./images/icons/icons2.svg#instagram"></use>
+              </svg></a>
+          </li>
+          <li>
+            <a href="" class="socials-link">
+              <svg class="icon">
+                <use href="./images/icons/icons2.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="socials-link">
+              <svg class="icon">
+                <use href="./images/icons/icons2.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="socials-link">
+              <svg class="icon">
+                <use href="./images/icons/icons2.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p>&#169;Photo, Inc. 2019. We love our users!</p>
       </div>
     </footer>
   </main>
 
-  <script src="./js/modal.js"></script>
+  <script src="./js/modal.js" type="module"></script>
+  <script src="./js/form.js" type="module"></script>
 </body>
 
 </html>
